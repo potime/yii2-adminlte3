@@ -63,7 +63,7 @@ if (($tableSchema = $generator->getTableSchema()) === false) {
 }
 ?>
 
-                ['class' => 'yii\grid\ActionColumn'],
+                ['class' => 'potime\adminlte3\grid\ActionColumn'],
             ],
             'summaryOptions' => ['class' => 'summary mb-2'],
             'pager' => [
