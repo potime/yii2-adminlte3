@@ -81,3 +81,12 @@ if (!YII_ENV_TEST) {
     ];
 }
 ```
+
+Thx
+---
+
+[ColorlibHQ/AdminLTE](https://github.com/ColorlibHQ/AdminLTE).
+ 
+[dmstr/yii2-adminlte-asset](https://github.com/dmstr/yii2-adminlte-asset).
+
+[hail812/yii2-adminlte3](https://github.com/hail812/yii2-adminlte3).
