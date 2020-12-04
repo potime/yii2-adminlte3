@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist potime/yii2-adminlte3 "*"
+php composer.phar require --prefer-dist potime/yii2-adminlte3 "^1.0"
 ```
 
 or add
 
 ```
-"potime/yii2-adminlte3": "*"
+"potime/yii2-adminlte3": "^1.0"
 ```
 
 to the require section of your `composer.json` file.
@@ -60,6 +60,13 @@ Customization
         ]
     ],
 ]
+```
+
+#### Layouts (login)
+
+Use the code in your controller.
+```php
+$this->layout = '/main-login';
 ```
 
 #### Template for Gii CRUD generator
