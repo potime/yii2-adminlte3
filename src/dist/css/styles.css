@@ -1,0 +1,43 @@
+/*!
+ * Yii 2.0 Framework
+ * @link http://www.yiiframework.com/
+ * @copyright Copyright (c) 2008 Yii Software LLC
+ * @license http://www.yiiframework.com/license/
+ * @author Qiang Xue <qiang.xue@gmail.com>
+ * @since 2.0
+ */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: "\f15d";
+}
+
+a.desc:after {
+    content: "\f881";
+}
+
+.sort-numerical a.asc:after {
+    content: "\f162";
+}
+
+.sort-numerical a.desc:after {
+    content: "\f886";
+
+}
+
+.sort-ordinal a.asc:after {
+    content: "\f160";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\f884";
+}
