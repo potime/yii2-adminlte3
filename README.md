@@ -89,6 +89,24 @@ if (!YII_ENV_TEST) {
 }
 ```
 
+Plugin
+---
+### bs-custom-file-input
+A little plugin which makes Bootstrap 4 custom file input dynamic with no dependencies.
+
+[bs-custom-file-input](https://github.com/Johann-S/bs-custom-file-input).
+
+##### How to use it
+```php
+<?php
+\potime\adminlte3\assets\plugin\CustomFileInputAsset::register($this);
+?>
+
+$(document).ready(function () {
+  bsCustomFileInput.init()
+})
+```
+
 Thx
 ---
 
