@@ -38,7 +38,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <?php if ($generator->indexWidgetType === 'grid'): ?>
         <?= "<?= " ?>GridView::widget([
             'dataProvider' => $dataProvider,
-            <?= !empty($generator->searchModelClass) ? "'filterModel' => \$searchModel,\n" : ""; ?>
+<?= !empty($generator->searchModelClass) ? "'filterModel' => \$searchModel,\n" : ""; ?>
             'options' => ['class' => 'grid-view table-responsive'],
             'columns' => [
                 ['class' => 'yii\grid\SerialColumn'],
