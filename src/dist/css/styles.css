@@ -6,6 +6,8 @@
  * @author Qiang Xue <qiang.xue@gmail.com>
  * @since 2.0
  */
+
+/* Table Sort Style */
 a.asc:after, a.desc:after {
     position: relative;
     top: 1px;
@@ -31,7 +33,6 @@ a.desc:after {
 
 .sort-numerical a.desc:after {
     content: "\f886";
-
 }
 
 .sort-ordinal a.asc:after {
@@ -40,4 +41,31 @@ a.desc:after {
 
 .sort-ordinal a.desc:after {
     content: "\f884";
+}
+
+/* Toast Sample Style */
+#toast-container {
+    position: fixed;
+    margin: .8rem;
+}
+
+#toast-container > .toast {
+    position: relative;
+    pointer-events: auto;
+    overflow: hidden;
+    padding: 0 1rem;
+    width: 360px;
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+
+#toast-container > .toast > .toast-header {
+    color: #FFFFFF;
+    background-color: transparent;
+    padding: .75rem;
+    border-bottom-color: rgba(255, 255, 255, .125);
+}
+
+#toast-container > .toast > .toast-body {
+    padding: 1rem .75rem;
 }
