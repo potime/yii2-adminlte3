@@ -4,6 +4,7 @@ namespace potime\adminlte3\widgets;
 
 use Yii;
 use yii\bootstrap4\Widget;
+use yii\helpers\Html;
 
 /**
  * Toast widget renders a message from session flash. All flash messages are displayed
@@ -34,6 +35,12 @@ class Toast extends Widget
      * @var int
      */
     public $delay = 5000;
+
+    /**
+     * 位置（默认：右下）
+     * @var string
+     */
+    public $layout = 'toasts-bottom-right';
 
     /**
      * 图标 与 样式配置
@@ -71,6 +78,7 @@ class Toast extends Widget
 
     /**
      * {@inheritdoc}
+     * @throws \Exception
      */
     public function run()
     {
@@ -78,7 +86,7 @@ class Toast extends Widget
         $flashes = $session->getAllFlashes();
         $appendClass = isset($this->options['class']) ? ' ' . $this->options['class'] : '';
 
-        echo '<div id="toast-container" class="toasts-bottom-right">';
+        echo Html::beginTag('div', ['id' => 'toast-container', 'class' => $this->layout]) . PHP_EOL;
         foreach ($flashes as $type => $flash) {
             if (!isset($this->types[$type])) {
                 continue;
@@ -97,6 +105,6 @@ class Toast extends Widget
             }
             $session->removeFlash($type);
         }
-        echo '</div>';
+        echo Html::endTag('div');
     }
 }
